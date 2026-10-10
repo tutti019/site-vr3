@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vr3 Telecom — Fibra Óptica Sem Enrolação</title>
+<meta name="description" content="Vr3 Telecom: fibra óptica rápida e estável, sem limite de consumo, Wi-Fi 6 incluso e gente de verdade no suporte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="network-canvas"></canvas>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="logo">
+      <img src="assets/logo.png" alt="Vr3 Telecom" class="logo__img">
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#empresa" class="nav__link">Empresa</a>
+      <a href="#planos" class="nav__link">Planos</a>
+      <a href="#como-funciona" class="nav__link">Como Funciona</a>
+      <a href="#contato" class="nav__link">Contato</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="https://centralassinante.com.br/#/login" target="_blank" rel="noopener" class="btn btn--client">Central do Cliente</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#empresa" class="mobile-nav__link">Empresa</a>
+  <a href="#planos" class="mobile-nav__link">Planos</a>
+  <a href="#como-funciona" class="mobile-nav__link">Como Funciona</a>
+  <a href="#contato" class="mobile-nav__link">Contato</a>
+  <a href="https://centralassinante.com.br/#/login" target="_blank" rel="noopener" class="btn btn--client btn--block">Central do Cliente</a>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5511946291325" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco no WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff"><path d="M16.001 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.258.594 4.462 1.723 6.406L3.2 28.8l6.57-1.687a12.74 12.74 0 0 0 6.23 1.587h.001c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.7-12.8-12.7zm0 23.147h-.001a10.29 10.29 0 0 1-5.253-1.44l-.377-.224-3.9 1.002 1.041-3.8-.246-.39a10.28 10.28 0 0 1-1.58-5.495c0-5.696 4.635-10.33 10.334-10.33 2.76 0 5.353 1.076 7.304 3.03a10.26 10.26 0 0 1 3.024 7.306c-.002 5.696-4.637 10.34-10.346 10.34zm5.665-7.735c-.31-.155-1.834-.905-2.118-1.008-.284-.104-.49-.155-.697.155-.207.31-.8 1.008-.982 1.216-.18.207-.362.233-.672.078-.31-.155-1.31-.483-2.495-1.54-.923-.823-1.546-1.84-1.727-2.15-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.155-.697-1.68-.956-2.302-.252-.605-.508-.523-.697-.533l-.594-.01c-.207 0-.543.078-.827.388s-1.086 1.06-1.086 2.585 1.112 3 1.267 3.208c.155.207 2.19 3.343 5.307 4.688.741.32 1.319.512 1.77.655.744.237 1.42.204 1.955.124.596-.089 1.834-.75 2.093-1.474.259-.724.259-1.345.181-1.474-.077-.13-.284-.207-.594-.362z"/></svg>
+</a>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container hero__inner">
+    <div class="hero__content reveal">
+      <div class="badge">
+        <span class="badge__dot"></span>
+        Fibra óptica ligada em Guarulhos/SP
+      </div>
+      <h1 class="hero__title">
+        Internet <span class="grad-text">Rápida</span> de Verdade,
+        <span class="grad-text">Sem Enrolação</span>
+      </h1>
+      <p class="hero__desc">
+        Chega de trava no vídeo e queda de sinal. Nossa fibra chega até você
+        com Wi-Fi 6 sem custo extra, sem limite de consumo e um time pronto
+        pra te atender todo santo dia, a qualquer hora.
+      </p>
+      <div class="hero__cta">
+        <a href="#planos" class="btn btn--primary">Escolher meu Plano <span aria-hidden="true">→</span></a>
+        <a href="https://wa.me/5511946291325" target="_blank" rel="noopener" class="btn btn--outline">
+          <svg viewBox="0 0 32 32" width="18" height="18" fill="currentColor" style="margin-right:8px"><path d="M16.001 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.258.594 4.462 1.723 6.406L3.2 28.8l6.57-1.687a12.74 12.74 0 0 0 6.23 1.587h.001c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.7-12.8-12.7z"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__card reveal" style="transition-delay:.15s">
+      <div class="speed-card">
+        <div class="speed-card__badge">📶 Fibra ponta a ponta</div>
+        <div class="speed-card__main">
+          <span class="speed-card__number">700</span>
+          <span class="speed-card__unit">Mbps</span>
+        </div>
+        <p class="speed-card__caption">no plano mais top que a gente tem</p>
+
+        <div class="speed-bars">
+          <div class="speed-bar">
+            <div class="speed-bar__label"><span>Download</span><span>700 Mbps</span></div>
+            <div class="speed-bar__track"><div class="speed-bar__fill fill--orange" style="--val:96%"></div></div>
+          </div>
+          <div class="speed-bar">
+            <div class="speed-bar__label"><span>Upload</span><span>700 Mbps</span></div>
+            <div class="speed-bar__track"><div class="speed-bar__fill fill--cyan" style="--val:82%"></div></div>
+          </div>
+          <div class="speed-bar">
+            <div class="speed-bar__label"><span>Streaming 4K/8K</span><span>Ótimo</span></div>
+            <div class="speed-bar__track"><div class="speed-bar__fill fill--green" style="--val:100%"></div></div>
+          </div>
+          <div class="speed-bar">
+            <div class="speed-bar__label"><span>Gaming</span><span>&lt;1ms</span></div>
+            <div class="speed-bar__track"><div class="speed-bar__fill fill--purple" style="--val:98%"></div></div>
+          </div>
+        </div>
+
+        <div class="speed-card__perks">
+          <div class="perk"><span class="perk__icon">📶</span>Wi-Fi 6 Incluso</div>
+          <div class="perk"><span class="perk__icon">♾️</span>Sem Limite de Dados</div>
+          <div class="perk"><span class="perk__icon">🎧</span>Suporte Todo Dia</div>
+          <div class="perk"><span class="perk__icon">✅</span>99.9% no Ar</div>
+        </div>
+
+        <div class="speed-card__ribbon">🎉 Instalação Por Nossa Conta</div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#stats" class="scroll-hint" aria-label="Rolar para baixo">
+    <span></span>
+  </a>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="container stats__inner">
+    <div class="stat reveal">
+      <span class="stat__number">500+</span>
+      <span class="stat__label">Clientes Conectados</span>
+    </div>
+    <div class="stat reveal" style="transition-delay:.1s">
+      <span class="stat__number">99.9%</span>
+      <span class="stat__label">Disponibilidade da Rede</span>
+    </div>
+    <div class="stat reveal" style="transition-delay:.2s">
+      <span class="stat__number">700M</span>
+      <span class="stat__label">Mbps de Capacidade</span>
+    </div>
+    <div class="stat reveal" style="transition-delay:.3s">
+      <span class="stat__number">5+</span>
+      <span class="stat__label">Anos de Estrada</span>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE NOS ESCOLHER -->
+<section class="section" id="empresa">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="label">NOSSOS DIFERENCIAIS</span>
+      <h2 class="section__title">Motivos pra trocar de provedor hoje</h2>
+      <p class="section__subtitle">
+        Rede bem cuidada, conexão que não cai e um suporte que atende de
+        verdade. É isso que a gente entrega, sem letra miúda no contrato.
+      </p>
+    </div>
+
+    <div class="grid grid--4">
+      <div class="card-feature reveal">
+        <div class="card-feature__icon icon--orange">🚀</div>
+        <h3>Velocidade de Sobra</h3>
+        <p>Fibra de última geração com planos de até 700 Mbps pra você navegar, jogar e assistir sem travar nada.</p>
+      </div>
+      <div class="card-feature reveal" style="transition-delay:.1s">
+        <div class="card-feature__icon icon--cyan">🛡️</div>
+        <h3>Rede Que Não Cai</h3>
+        <p>Monitoramento 24h e 99.9% de disponibilidade, pra sua conexão continuar de pé mesmo nos horários de pico.</p>
+      </div>
+      <div class="card-feature reveal" style="transition-delay:.2s">
+        <div class="card-feature__icon icon--purple">🎧</div>
+        <h3>Gente de Verdade no Suporte</h3>
+        <p>Equipe técnica de prontidão todos os dias, o dia inteiro, pra resolver qualquer imprevisto rapidinho.</p>
+      </div>
+      <div class="card-feature reveal" style="transition-delay:.3s">
+        <div class="card-feature__icon icon--green">📶</div>
+        <h3>Wi-Fi 6 Sem Custo</h3>
+        <p>Roteador de última geração incluso em todos os planos, sem taxa extra na instalação ou na mensalidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section class="section section--alt" id="planos">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="label">PLANOS VR3</span>
+      <h2 class="section__title">Qual velocidade combina com você?</h2>
+      <p class="section__subtitle">
+        Todo plano já sai com instalação por nossa conta, roteador Wi-Fi 6 e
+        zero taxa de adesão. Você escolhe, a gente conecta.
+      </p>
+    </div>
+
+    <div class="plans">
+      <div class="plan reveal">
+        <h3 class="plan__name">BASIC</h3>
+        <div class="plan__speed"><span>100</span> Mbps</div>
+        <div class="plan__upload">Upload de 100 Mbps</div>
+        <div class="plan__price"><span class="plan__currency">R$</span>69<span class="plan__cents">,99</span><span class="plan__period">/mês</span></div>
+        <ul class="plan__list">
+          <li><span class="check check--orange">✓</span>Instalação por nossa conta</li>
+          <li><span class="check check--orange">✓</span>Wi-Fi 6 incluso</li>
+          <li><span class="check check--orange">✓</span>Sem limite de consumo</li>
+          <li><span class="check check--orange">✓</span>Suporte todo dia</li>
+        </ul>
+        <a href="#contato" class="btn btn--plan">QUERO ESSE PLANO</a>
+      </div>
+
+      <div class="plan plan--featured reveal" style="transition-delay:.1s">
+        <div class="plan__badge">MAIS POPULAR</div>
+        <h3 class="plan__name">MASTER</h3>
+        <div class="plan__speed"><span>300</span> Mbps</div>
+        <div class="plan__upload">Upload de 330 Mbps</div>
+        <div class="plan__price"><span class="plan__currency">R$</span>79<span class="plan__cents">,99</span><span class="plan__period">/mês</span></div>
+        <ul class="plan__list">
+          <li><span class="check">✓</span>Instalação por nossa conta</li>
+          <li><span class="check">✓</span>Wi-Fi 6 incluso</li>
+          <li><span class="check">✓</span>Sem limite de consumo</li>
+          <li><span class="check">✓</span>Suporte prioritário todo dia</li>
+          <li><span class="check">✓</span>Perfeito pra maratonar em 4K</li>
+        </ul>
+        <a href="#contato" class="btn btn--primary btn--block">QUERO ESSE PLANO</a>
+      </div>
+
+      <div class="plan reveal" style="transition-delay:.2s">
+        <h3 class="plan__name">FULL</h3>
+        <div class="plan__speed"><span>500</span> Mbps</div>
+        <div class="plan__upload">Upload de 550 Mbps</div>
+        <div class="plan__price"><span class="plan__currency">R$</span>99<span class="plan__cents">,99</span><span class="plan__period">/mês</span></div>
+        <ul class="plan__list">
+          <li><span class="check check--cyan">✓</span>Instalação por nossa conta</li>
+          <li><span class="check check--cyan">✓</span>Wi-Fi 6 incluso</li>
+          <li><span class="check check--cyan">✓</span>Sem limite de consumo</li>
+          <li><span class="check check--cyan">✓</span>Suporte todo dia</li>
+          <li><span class="check check--cyan">✓</span>Perfeito pro home office</li>
+        </ul>
+        <a href="#contato" class="btn btn--plan">QUERO ESSE PLANO</a>
+      </div>
+
+      <div class="plan reveal" style="transition-delay:.3s">
+        <h3 class="plan__name">PREMIUM</h3>
+        <div class="plan__speed"><span>700</span> Mbps</div>
+        <div class="plan__upload">Upload de 700 Mbps</div>
+        <div class="plan__price"><span class="plan__currency">R$</span>119<span class="plan__cents">,99</span><span class="plan__period">/mês</span></div>
+        <ul class="plan__list">
+          <li><span class="check check--purple">✓</span>Instalação por nossa conta</li>
+          <li><span class="check check--purple">✓</span>Wi-Fi 6 incluso</li>
+          <li><span class="check check--purple">✓</span>Sem limite de consumo</li>
+          <li><span class="check check--purple">✓</span>Suporte VIP todo dia</li>
+          <li><span class="check check--purple">✓</span>Feito pra quem joga sério</li>
+        </ul>
+        <a href="#contato" class="btn btn--plan">QUERO ESSE PLANO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="section" id="como-funciona">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="label">É RAPIDINHO</span>
+      <h2 class="section__title">Do pedido à conexão em 3 passos</h2>
+      <p class="section__subtitle">
+        Sem burocracia e sem enrolação: veja o caminho até sua casa ou
+        empresa ficar 100% conectada à nossa fibra.
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step step--orange reveal">
+        <span class="step__number">01</span>
+        <div class="step__icon">📋</div>
+        <h3>Fala com a Gente</h3>
+        <p>Escolha a velocidade ideal pra sua casa ou empresa e converse com nosso time de vendas.</p>
+        <span class="step__tag">Sem contrato chato</span>
+      </div>
+      <div class="step__arrow reveal" aria-hidden="true">→</div>
+      <div class="step step--purple reveal" style="transition-delay:.1s">
+        <span class="step__number">02</span>
+        <div class="step__icon">🛠️</div>
+        <h3>A Gente Instala</h3>
+        <p>Nossa equipe técnica agenda e faz a instalação sem custo, no dia e horário combinados com você.</p>
+        <span class="step__tag">Sem taxa escondida</span>
+      </div>
+      <div class="step__arrow reveal" aria-hidden="true" style="transition-delay:.15s">→</div>
+      <div class="step step--cyan reveal" style="transition-delay:.2s">
+        <span class="step__number">03</span>
+        <div class="step__icon">🌐</div>
+        <h3>Você Navega</h3>
+        <p>Pronto! Sua fibra está no ar, estável e sem limite de consumo pra você usar do seu jeito.</p>
+        <span class="step__tag">Liga na hora</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="section section--alt" id="contato">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="label">BORA CONVERSAR</span>
+      <h2 class="section__title">Manda um alô pra gente</h2>
+      <p class="section__subtitle">
+        Tire dúvidas, feche um plano ou peça suporte. É só chamar que
+        respondemos rapidinho.
+      </p>
+    </div>
+
+    <div class="contact">
+      <div class="contact__info reveal">
+        <div class="info-card">
+          <div class="info-card__icon icon--orange">📍</div>
+          <div>
+            <h4>Endereço</h4>
+            <p>Tv. Particular Seis — Sítio São Francisco<br>Guarulhos/SP, 07261-404</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon icon--green">💬</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>(11) 94629-1325</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon icon--orange">🕒</div>
+          <div>
+            <h4>Horário de Atendimento</h4>
+            <p>Seg a Sáb — 09h às 18h<br>Suporte técnico 24/7</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" style="transition-delay:.1s" id="contactForm">
+        <div class="form__row">
+          <label>
+            Nome Completo
+            <input type="text" name="nome" placeholder="Seu nome completo" required>
+          </label>
+        </div>
+        <div class="form__row form__row--split">
+          <label>
+            E-mail
+            <input type="email" name="email" placeholder="seu@email.com" required>
+          </label>
+          <label>
+            Telefone
+            <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+          </label>
+        </div>
+        <div class="form__row">
+          <label>
+            Assunto
+            <select name="assunto" required>
+              <option value="" disabled selected>Selecione um assunto</option>
+              <option value="contratar">Quero contratar um plano</option>
+              <option value="suporte">Suporte técnico</option>
+              <option value="financeiro">Financeiro</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+          </label>
+        </div>
+        <div class="form__row">
+          <label>
+            Mensagem
+            <textarea name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">
+          Enviar Mensagem
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="margin-left:8px"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="map reveal">
+      <iframe
+        title="Localização Vr3 Telecom"
+        src="https://www.google.com/maps?q=Tv.+Particular+Seis,+S%C3%ADtio+S%C3%A3o+Francisco,+Guarulhos+-+SP,+07261-404&output=embed"
+        width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <a href="#hero" class="logo">
+        <img src="assets/logo.png" alt="Vr3 Telecom" class="logo__img">
+      </a>
+      <p class="footer__desc">
+        A gente leva fibra óptica de verdade pra casa e pro trabalho de
+        quem confia na Vr3: rápida, estável e com gente pronta pra ajudar.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navegação</h4>
+      <a href="#empresa">Empresa</a>
+      <a href="#planos">Planos</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#contato">Contato</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contato Rápido</h4>
+      <a href="https://wa.me/5511946291325" target="_blank" rel="noopener">(11) 94629-1325</a>
+      <a href="https://centralassinante.com.br/#/login" target="_blank" rel="noopener">Central do Cliente</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <div class="footer__bottom-left">
+        <p>© 2026 Vr3 Telecom — Todos os direitos reservados.</p>
+        <p class="footer__credit">Desenvolvido por Arthur Romanovas</p>
+      </div>
+      <div class="footer__legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Serviço</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
